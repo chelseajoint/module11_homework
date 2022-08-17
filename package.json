@@ -9,6 +9,9 @@
   "author": "chelseajoint <91132438+chelseajoint@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "babel-jest": "^28.1.3",
     "jest": "^28.1.3"
   }
 }
