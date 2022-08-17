@@ -1,7 +1,7 @@
 //Напишите программу, которая запрашивает у пользователя три числа и выводит максимальное из них, 
 //используйте if/else/else if. Попытайтесь не использовать &&.
 
-export function largestNumber(a, b, c) {
+function largestNumber(a, b, c) {
   let result;
   if(a > b) {
     if(a > c) {
@@ -29,10 +29,20 @@ export function largestNumber(a, b, c) {
 //Напишите программу, которая запрашивает у пользователя число N и отвечает 
 //"Число {N} четное!" или "Число {N} нечетное!"
 
-export function evenOddNumber(num){
+function evenOddNumber(num){
   if(num % 2 === 0){
     return `Число ${num} четное!`
   } else {
     return `Число ${num} нечетное!`
   };
 };
+
+//Напишите функцию getPercents(percent, number),
+//которая возвращает {percent} процентов от {number}.
+
+function getPercents(percent, number){
+  const result = number / 100 * percent;
+  return result;
+};
+
+export { largestNumber, evenOddNumber, getPercents };
